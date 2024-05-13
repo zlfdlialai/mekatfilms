@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mekat Films.com - Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="mekat-icon" href="logo.png">
+    <style>
+
+        @media screen and (max-width: 768px) {
+            .nav-container {
+                display: none;
+            }
+            .dropdown {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.htm"><img src="logo.png" class="logo"></a>
+        </div>
+        <!-- Dropdown menu for smaller screens -->
+        <select class="dropdown" onchange="location = this.value;">
+            <option value="index.htm">Home</option>
+            <option value="ourteam.html">Our team</option>
+            <option value="gallery.html">Gallery</option>
+            <option value="services.html" selected>Services</option>
+            <option value="contact.html">Contact</option>
+        </select>
+        <!-- End of dropdown menu -->
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="ourteam.html">Our team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Services</h1>
+        <div class="services-container">
+            <div class="service">
+                <h2>Film Production</h2>
+                <p>We offer a wide range of services for film production, including scriptwriting, casting, and videography and photography.</p>
+            </div>
+            <div class="service">
+                <h2>Video Editing</h2>
+                <p>Our team of skilled editors can help you create a polished and professional final product.</p>
+            </div>
+            <div class="service">
+                <h2>Production Consultancy</h2>
+                <p>We provide expert advice, guidance, and support to individuals or organizations involved in various aspects of film, television, or media production.</p> 
+            </div>
+            <div class="service">
+                <h2>Script Writing</h2>
+                <p>Our skilled writers can create interesting and captivating stories that are perfect for your project. Whether you need screenplays, dialogue editing, or a completely new story written from scratch, we'll work closely with you to make your ideas come to life on paper.</p> 
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mekatfilms. All rights reserved.</p>
+    </footer>  
+    
+</body>
+</html>

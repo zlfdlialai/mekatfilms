@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mekat Films.com - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="mekat-icon" href="logo.png">
+    <style>
+
+        @media screen and (max-width: 768px) {
+            .nav-container {
+                display: none;
+            }
+            .dropdown {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.htm"><img src="logo.png" class="logo"></a>
+        </div>
+        <!-- Dropdown menu for smaller screens -->
+        <select class="dropdown" onchange="location = this.value;">
+            <option value="index.htm">Home</option>
+            <option value="ourteam.html">Our Team</option>
+            <option value="gallery.html" selected>Gallery</option>
+            <option value="services.html">Services</option>
+            <option value="contact.html">Contact</option>
+        </select>
+        <!-- End of dropdown menu -->
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="ourteam.html">Our team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div class="contact-person">
+                <h2>Hari Ahmad</h2>
+                <p>Phone: +601111469150</p>
+                <p>Email: hari@mekatfilms.com</p>
+                <p>Instagram: @hariahmd</p>
+            </div>
+
+            <div class="contact-person">
+                <h2>Adi Zechariah</h2>
+                <p>Phone: +60168080379</p>
+                <p>Email: adi.zechariah@mekatfilms.com</p>
+                <p>Instagram: @adi.zechariah</p>
+            </div>
+
+            <div class="contact-person">
+                <h2>Mohamad Zulfadli</h2>
+                <p>Phone: +60127340102</p>
+                <p>Email: zulfadli@mekatfilms.com</p>
+                <p>Instagram: @zlfdli.alai</p>
+            </div>
+        </div>
+
+        <div class="company-email">
+            <p>For general inquiries, please email us at <a href="mailto:admin@mekatfilms.com">admin@mekatfilms.com</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    <footer>
+        <p>&copy; 2024 Mekatfilms. All rights reserved.</p>
+    </footer>  
+
+</body>
+</html>

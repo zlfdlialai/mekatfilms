@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mekat Films.com - Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="mekat-icon" href="logo.png">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .nav-container {
+                display: none;
+            }
+            .dropdown {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.htm"><img src="logo.png" class="logo"></a>
+        </div>
+        <!-- Dropdown menu for smaller screens -->
+        <select class="dropdown" onchange="location = this.value;">
+            <option value="index.htm">Home</option>
+            <option value="ourteam.html">Our team</option>
+            <option value="gallery.html" selected>Gallery</option>
+            <option value="services.html">Services</option>
+            <option value="contact.html">Contact</option>
+        </select>
+        <!-- End of dropdown menu -->
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="ourteam.html">Our team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Gallery</h1>
+        <p>Take a look at some of our previous work.</p>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="PetraSarawakRegatta-8.jpg" alt="Gallery 1">
+            </div>
+            <div class="gallery-item hidden">
+                <img src="PetraSarawakRegatta-50.jpg" alt="Gallery 2">
+            </div>
+            <div class="gallery-item hidden">
+                <img src="PetraSarawakRegatta-56.jpg" alt="Gallery 3">
+            </div>
+            <div class="gallery-item hidden">
+                <img src="SarawakRegattaA-200.jpg" alt="Gallery 4">
+            </div>
+            <div class="gallery-item hidden">
+                <img src="pic1.jpg" alt="Gallery 5">
+            </div>
+            <div class="gallery-item hidden">
+                <img src="pic2.jpg" alt="Gallery 6">
+            </div>
+            <div class="gallery-item hidden">
+                <img src="pic3.jpg" alt="Gallery 7">
+            </div>
+            <div class="gallery-item hidden">
+                <img src="Copy of SarawakRegattaA-214.jpg" alt="Gallery 8">
+            </div>
+            <div class="gallery-item hidden">
+                <img src="wedding1.jpg" alt="Gallery 9">
+            </div>
+            <div class="gallery-item hidden">
+                <img src="wedding2.jpg" alt="Gallery 10">
+            </div>
+            <div class="gallery-item hidden">
+                <img src="wedding3.jpg" alt="Gallery 11">
+            </div>
+        </div>
+        <div>
+            <button id="prevButton">Previous</button>
+            <button id="nextButton">Next</button>
+        </div>
+    </div>
+
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        let currentIndex = 0;
+
+        function showNextImage() {
+            galleryItems[currentIndex].classList.add('hidden');
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            galleryItems[currentIndex].classList.remove('hidden');
+        }
+
+        function showPrevImage() {
+            galleryItems[currentIndex].classList.add('hidden');
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            galleryItems[currentIndex].classList.remove('hidden');
+        }
+
+        document.getElementById('nextButton').addEventListener('click', showNextImage);
+        document.getElementById('prevButton').addEventListener('click', showPrevImage);
+    </script>
+
+<footer>
+    <p>&copy; 2024 Mekatfilms. All rights reserved.</p>
+</footer>  
+
+</body>
+</html>

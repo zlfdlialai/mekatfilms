@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Mekat Films.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="mekat-icon" href="logo.png">
+    <style>
+
+        @media screen and (max-width: 768px) {
+            .nav-container {
+                display: none;
+            }
+            .dropdown {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.htm"><img src="logo.png" class="logo"></a>
+        </div>
+        <!-- Dropdown menu for smaller screens -->
+        <select class="dropdown" onchange="location = this.value;">
+            <option value="index.htm">Home</option>
+            <option value="ourteam.html">Our team</option>
+            <option value="gallery.html">Gallery</option>
+            <option value="services.html">Services</option>
+            <option value="contact.html">Contact</option>
+        </select>
+        <!-- End of dropdown menu -->
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="ourteam.html">Our team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Mekat Films</h1>
+        <p style="font-family:'Courier New'" style="font-size:100px"> Photography, videography, coverage, media and everything in between....</p>
+        <div>
+            <a href="pastwork.html"><button type='button'><span></span>PAST WORKS</button></a>
+        </div>
+
+        <div class="home-vid">
+            <iframe src="https://drive.google.com/file/d/13WKk1zXg4MVmn3UNsHHny2XspfeCgjA7/preview" width="640" height="480" allow="autoplay"></iframe>
+        </div>
+        
+        <div class="social-icons-container">
+            <li><a class="social-icon" href="https://www.instagram.com/mekatfilms"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a class="social-icon" href="https://www.facebook.com/mekatfilms"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Mekat Films is a film production company based in Miri, Sarawak. We specialize in creating high-quality films, documentaries, and commercials for clients in Malaysia and beyond. Our team consists of experienced filmmakers, cinematographers, and editors who are passionate about storytelling and visual arts.</p>
+        <h2>About Mekat</h2>
+        <p>“Mekat” (Mee-kat) is inspired from
+            the Kiput and Melanau language
+            which means rise. It symbolises the
+            rise of the creatives that work in
+            Mekat Films that came from a
+            background of indigenous tribes. To
+            make a difference and change for the
+            people.</p>
+        <h3>Company History</h3>
+        <p>Mekat Films has been established since January of 2021 but
+            has been working as a collective effort with various artists
+            and filmmakers in Miri, Sarawak since 2019. Mekat Films
+            focuses on video and art production, doing work such as
+            films, promotional videos, music videos, documentaries and
+            community engagement.</p>
+        <p>Contact us today to learn more about our services and how we can help you tell your story.</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Mekatfilms. All rights reserved.</p>
+    </footer>  
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

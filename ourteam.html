@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mekat Films.com - Our Team</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="mekat-icon" href="logo.png">
+    <style>
+
+        @media screen and (max-width: 768px) {
+            .nav-container {
+                display: none;
+            }
+            .dropdown {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.htm"><img src="logo.png" class="logo"></a>
+        </div>
+        <!-- Dropdown menu for smaller screens -->
+        <select class="dropdown" onchange="location = this.value;">
+            <option value="index.htm">Home</option>
+            <option value="ourteam.html" selected>Our Team</option>
+            <option value="gallery.html">Gallery</option>
+            <option value="services.html">Services</option>
+            <option value="contact.html">Contact</option>
+        </select>
+        <!-- End of dropdown menu -->
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="ourteam.html">Our team</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Our Team</h1>
+        <p>Meet the team behind Mekat Films.</p>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="Hari.jpg" alt="Person 1">
+                <h2><u>Hari Ahmad</u></h2>
+                <p>Position: Co-Founder</p>
+                <p>Hari is a Kiput filmmaker
+                    based in Miri, Sarawak. He has
+                    directed and written films for
+                    Mekat Films since its early days.
+                    The self taught director has been
+                    nominated for The Next New
+                    Wave filmmaker of Seashort Film
+                    Festival and Mini Film Festival.</p>
+            </div>
+            <div class="team-member">
+                <img src="Adi.jpg" alt="Person 2">
+                <h2><u>Adi Zechariah</u></h2>
+                <p>Position: Co-Founder</p>
+                <p>Adi is a Melanau cinematographer
+                    based in Miri, Sarawak. Who has
+                    experienced being the director of
+                    photography for multiple short
+                    films, documentaries and feature
+                    films.</p>
+            </div>
+            <div class="team-member">
+                <img src="Zul2.jpg" alt="Person 3">
+                <h2><u>Mohamad Zulfadli</u></h2>
+                <p>Position: Junior editor / Intern</p>
+                <p>Zulfadli is an intern at Mekat Films and is currently pursuing a bachelor's degree in computer science in UNIMAS. Despite his acedemic focus, he has chosen to explore film production and at the same web developing through his internship. At 23 years old, he is gaining valuable experience in these fields.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Mekatfilms. All rights reserved.</p>
+    </footer>  
+    
+</body>
+</html>
